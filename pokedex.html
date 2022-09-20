@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pokedex</title>
+    
+    <link rel="icon" href="./Assets/769px-Pokebola-pokeball-png-0.png">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./Assets/logo.png" alt="">
+        </div>
+        <div class="card">
+            <div class="nuevoorden">
+                <input type="text" placeholder="Chikorita" id="pokeName" name="pokeName"><br>
+            
+                <button class="btn" onclick="fetchPokemon()" id="boton">Buscar Pokemon</button>
+            </div>
+            <img src="./Assets/769px-Pokebola-pokeball-png-0.png" alt="profile-photo" id="pokeImg" data-tilt>
+            <h2 id="cambiarnombre">Welcome</h2>
+            <div class="carcteristicas">
+                <p>Habilidad</p>
+                <p>Movimientos</p>
+                <p>Tipo</p>
+            </div>
+            <div class="carcteristicas">
+                <p id="stat1"></p>
+                <p id="movements"></p>
+                <p id="ptype"></p>
+            </div>
+            <p id="statsss">ID</p>
+
+            <div class="links">
+                <img src="./Assets/button-red.png" alt="" data-tilt>
+                <img src="./Assets/button-yellow.png" alt="" data-tilt>
+                <img src="./Assets/button-green.png" alt="" data-tilt>
+            </div>
+
+        </div>
+        <div class="card">
+            <h1 class="sean">Stats</h1>
+            <div class="d1">
+                <p>Hp</p>
+                <p id="stat1A">--</p>
+            </div>
+            <div class="d1">
+                <p>Attack</p>
+                <p id="stat2">--</p>
+            </div>
+            <div class="d1">
+                <p>Defense</p>
+                <p id="stat3">--</p>
+            </div>
+            <div class="d1">
+                <p>SP Attack</p>
+                <p id="stat4">--</p>
+            </div>
+            <div class="d1">
+                <p>SP defense</p>
+                <p id="stat5">--</p>
+            </div>
+            <div class="d1">
+                <p>Speed</p>
+                <p id="stat6">--</p>
+            </div>
+
+            <div class="extrabuttons">
+                <div class="directionbutton"><img src="./Assets/directional button.png" alt="" data-tilt></div>
+                <div class="bluebuttons"><img src="./Assets/bluebuttons.png" alt="" data-tilt></div>
+            </div>
+
+
+        </div>
+    </div>
+    <footer>
+        <script src="./vanilla-tilt.js"></script>
+        <script src="./pokedex.js"></script>
+    </footer>
+
+</body>
+</html>
